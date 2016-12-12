@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "common.c"
+#include "common.h"
 
 int main(int argc, char **argv){
 
@@ -11,7 +11,7 @@ int main(int argc, char **argv){
 	printf("%%ld will print a long int such as this: %ld -which was just printed.", j);
 	char *s = "the string in question";
 	printf("%%s will print a char * array (String) such as this: %s", s);
-	void *ptr = sbrk(20);
+	void *a = sbrk(20);
 	printf("%%p will print a void * or generic pointer like this: %p.",a);
 
 	return 0;
