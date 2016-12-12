@@ -1,11 +1,11 @@
 CC=gcc
 CFLAGS=-Wall -g
 
-PROGS= common
+PROGS= commonprintf
 
 all: $(PROGS)
 
-common: common.o
+commonprintf: commonprintf.o 
 	$(CC) $(CFLAGS) $^ -o $@
 
 clean:
